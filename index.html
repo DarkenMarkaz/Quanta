@@ -1,186 +1,77 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Welcome to Quanta">
 	<title>Quanta: Main Terminal</title>
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-<title>index</title>
+	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/terminalStyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<!--the mobile navigation-->
-	<div id="mobile-top-nav" class="mobile-top-nav">
-		
-		<div style="padding: 0px 10px">
-			<button id="open-parent-nav" class="parent-nav" style="display: block" onClick="openNav()">&#9776;</button>
-			<button id="close-parent-nav" class="parent-nav" style="display: none; color: grey" onClick="closeNav()">&#9932;</button>
-		</div>
-		<div id="nav-hold" class="nav-hold">
-			<div>
-				<button class="child-nav" style="color: grey" disabled>Home</button>
-			</div>
-			<div>
-				<button id="open-chr-nav" class="child-nav" style="display: block" onClick="openChr()">Characters</button>
-				<button id="close-chr-nav" class="child-nav" style="display: none; color: grey" onClick="closeChr()">Characters</button>
-			</div>
-				<div id="chr-hold" class="item-hold">
-					<div class="item-nav"><a href="#">Markaz Maxima</a></div>
-					<div class="item-nav"><a href="#">Diana Alexander</a></div>
-					<div class="item-nav"><a href="#">Godric Ericson</a></div>
-				</div>
-			<div>
-				<button id="open-misc-nav" class="child-nav" style="display: block" onClick="openMisc()">Misc.</button>
-				<button id="close-misc-nav" class="child-nav" style="display: none; color: grey" onClick="closeMisc()">Misc.</button>
-			</div>
-				<div id="misc-hold" class="item-hold">
-					<div class="item-nav"><a href="#">Arknights</a></div>
-				</div>
-			<div></div>
-		</div>
-		
-	</div>
 	
-	<!--the desktop navigation-->
-	<div id="d-top-nav" class="d-top-nav">
-		
-		
-	</div>
+	<!--the void-->
+	<div class="void"></div>
+	
+	<!--the top navigation-->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Characters</a>
+				<ul>
+					<li><a href="#">Markaz Maxima</a></li>
+					<li><a href="#">Diana Alexander</a></li>
+					<li><a href="#">Godric Ericson</a></li>
+					<li><a href="#">Red Lotus</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Chapters</a>
+				<ul>
+					<li><a href="#">nothing yet...</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Misc. Projects</a>
+				<ul>
+					<li><a href="akIndex.html">Arknights</a></li>
+					<li><a href="#">test</a></li>
+				</ul>
+			</li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
 	
 	<!--image-->
-	<div class="mobile-logo">
-		<img src="img/logo_trans.png" height="200px">
-	</div>
-	
-	<div class="desktop-logo">
-		<img src="img/logo_trans.png" height="400px">
+	<div class="front-pic">
+		<picture>
+			<img src="img/logo_trans.png" alt="logo" style="width: 400px">
+		</picture>
 	</div>
 	
 	<!--the notice-->
-	<div class="notice">
+	<div class="notice">            
 		
-		<p>
-            <br />
-            <h1><b>Markaz Maxima</b></h1>
-            <br />
-            <br />
-            <div>Heyo&nbsp;</div>
-            <br />
-            <div>
-                <p>This site is still in development, all template come from my unpolish college project.</p>
-                    <br />
-                <p>In this terminal, you will notice a lot of boxes wrapping content around the site.</p>
-                <p>This is nessesary for development troubleshooting and polishing that in progress, right now</p>
-            </div>
-		</p>
-	</div>
-	
-	<!--void-->
-	<div style="height: 50px"></div>
-	
-	<!--reveal footer-->
-	<div>
-		<button id="open-footer" class="ext-foot" style="display: block; bottom: 0px" onClick="openFoot()">About &and;</button>
-		<button id="close-footer" class="ext-foot" style="display: none; bottom: 30px" onClick="closeFoot()">About &or;</button>
+		<fieldset>
+			<legend>Welcome</legend>
+			<p>Heyo,</p>
+			<br/>
+			<p>This is Markaz Maxima, programmer of this terminal.</p>
+			<p>What you see here is just an experimantal website and project, final appearent may different.</p>
+		</fieldset>
+		
+		<br />
+		<br />
+		<br />
+		<br />
+		
+			<div>
+				<p style="font-size: 30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis tincidunt consectetur. Curabitur finibus odio eros, et bibendum leo pretium sed. Donec ut nibh condimentum, pellentesque lectus non, luctus sapien. Suspendisse sit amet velit enim. Fusce libero mauris, porta lacinia aliquam in, bibendum sit amet ante. Quisque tincidunt ante ut laoreet porttitor. Donec pharetra neque eu dignissim elementum. Suspendisse semper tortor porttitor nunc gravida, non elementum ex bibendum. Cras ac elementum purus. Vestibulum semper elementum purus vitae consequat. Donec sit amet dui rutrum, rhoncus ante ut, gravida orci. Donec interdum est sit amet orci pretium ornare vel eget tortor.</p>
+			</div>
 	</div>
 	
 	<!--the scripts-->
-	<script>
+	<script src="js/globalJS.js"></script>
 		
-		<!--open mobile navigation parent-->
-		function openNav() {
-			var expNav = document.getElementById("nav-hold");
-			var behav = document.getElementById("mobile-top-nav");
-			var openExt = document.getElementById("open-parent-nav");
-			var closeExt = document.getElementById("close-parent-nav");
-			
-			expNav.style.display = "block";
-			behav.style.borderRadius = "25px 25px 25px 0px";
-			openExt.style.display = "none";
-			closeExt.style.display = "block";
-		}
-		
-		<!--close mobile navigation parent-->
-		function closeNav() {
-			var expNav = document.getElementById("nav-hold");
-			var behav = document.getElementById("mobile-top-nav");
-			var openExt = document.getElementById("open-parent-nav");
-			var closeExt = document.getElementById("close-parent-nav");
-			
-			expNav.style.display = "none";
-			behav.style.borderRadius = "25px";
-			openExt.style.display = "block";
-			closeExt.style.display = "none";
-		}
-		
-		<!--open child characters-->
-		function openChr() {
-			var expNav = document.getElementById("chr-hold");
-			var openExt = document.getElementById("open-chr-nav");
-			var closeExt = document.getElementById("close-chr-nav");
-			
-			expNav.style.display = "block";
-			openExt.style.display = "none";
-			closeExt.style.display = "block";
-		}
-		
-		<!--close child characters-->
-		function closeChr() {
-			var expNav = document.getElementById("chr-hold");
-			var openExt = document.getElementById("open-chr-nav");
-			var closeExt = document.getElementById("close-chr-nav");
-			
-			expNav.style.display = "none";
-			openExt.style.display = "block";
-			closeExt.style.display = "none";
-		}
-		
-		<!--open misc-->
-		function openMisc() {
-			var expNav = document.getElementById("misc-hold")
-			var openExt = document.getElementById("open-misc-nav");
-			var closeExt = document.getElementById("close-misc-nav");
-			
-			expNav.style.display = "block";
-			openExt.style.display = "none";
-			closeExt.style.display = "block";
-		}
-		
-		<!--close misc-->
-		function closeMisc() {
-			var expNav = document.getElementById("misc-hold")
-			var openExt = document.getElementById("open-misc-nav");
-			var closeExt = document.getElementById("close-misc-nav");
-			
-			expNav.style.display = "none";
-			openExt.style.display = "block";
-			closeExt.style.display = "none";
-		}
-		
-		<!--open footer-->
-		function openFoot() {
-			var expNav = document.getElementById("footer")
-			var openExt = document.getElementById("open-footer");
-			var closeExt = document.getElementById("close-footer");
-			
-			expNav.style.height = "60px";
-			openExt.style.display = "none";
-			closeExt.style.display = "block";
-		}
-		
-		<!--close footer-->
-		function closeFoot() {
-			var expNav = document.getElementById("footer")
-			var openExt = document.getElementById("open-footer");
-			var closeExt = document.getElementById("close-footer");
-			
-			expNav.style.height = "0";
-			openExt.style.display = "block";
-			closeExt.style.display = "none";
-		}
-			
-	</script>
-	
-	
 </body>
 
 <footer id="footer"><br>2021-2022 Quanta<br><br></footer>

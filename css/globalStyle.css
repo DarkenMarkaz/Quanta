@@ -1,0 +1,132 @@
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.void{
+	height: 150px;
+}
+
+p{
+	color: white;
+	width: 60%;
+	font-size: 20px;
+}
+
+body{
+	padding-bottom: 50px;
+    background-image: linear-gradient(black, darkred);
+    background-attachment: fixed;
+}
+
+nav{
+	position: fixed;
+	top: 0px;
+	left: 300px;
+	right: 300px;
+	height: 60px;
+	padding-left: 50px;
+	background-color: black;
+	border-radius: 0px 0px 60px 60px;
+	border-bottom: 10px solid darkred;
+}
+
+ul{
+	padding-bottom: 10px;
+}
+
+ul li{
+	float: left;
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+}
+
+ul li a{
+	display: block;
+	color: white;
+	padding: 0px 15px 0px;
+	font-size: 20px;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	background: linear-gradient(rgba(0,0,1,0.00),black);
+}
+
+ul li a:hover{
+	background-color: darkred;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+ul li ul{
+	position: absolute;
+	display: none;
+	width: 200px;
+	background-color: black;
+	border-top: 5px solid darkred;
+	border-left: 5px solid darkred;
+	border-right: 10px solid darkred;
+	border-radius: 0px 0px 15px 15px;
+}
+
+ul li ul li{
+	float: left;
+	position: relative;
+	display: block;
+	line-height: 50px;
+}
+
+ul li ul li a{
+	display: block;
+	font-size: 17px;
+	width: 170px;
+}
+
+fieldset{
+	width: 600px;
+	padding: 50px;
+	margin: auto auto 100px;
+	border-radius: 25px;
+}
+
+legend{
+	color: white;
+	font-size: 30px;
+	padding: 0px 5px;
+}
+
+footer{
+	position: fixed;
+	width: 100%;
+	height: 0px;
+	bottom: 0px;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-image: linear-gradient(black, darkred);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
