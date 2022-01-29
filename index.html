@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="Welcome to Quanta">
-	<title>Quanta: Main Terminal</title>
+	<title>Quanta: Terminal</title>
 	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
 	<link href="css/terminalStyle.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -15,8 +16,9 @@
 	<div class="void"></div>
 	
 	<!--the top navigation-->
-	<nav>
-		<ul>
+	<nav id="top-nav" class="top-nav">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776</button>
+		<ul id="unordered-list">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Characters</a>
 				<ul>
@@ -42,9 +44,15 @@
 	</nav>
 	
 	<!--image-->
-	<div class="front-pic">
+	<div class="picture">	
 		<picture>
+			
 			<img src="img/logo_trans.png" alt="logo" style="width: 400px">
+		</picture>
+	</div>
+	<div class="m-picture">
+		<picture>
+			<img src="img/logo_trans.png" alt="logo" style="width: 200px">
 		</picture>
 	</div>
 	
@@ -56,17 +64,23 @@
 			<p>Heyo,</p>
 			<br/>
 			<p>This is Markaz Maxima, programmer of this terminal.</p>
+			</br>
 			<p>What you see here is just an experimantal website and project, final appearent may different.</p>
 		</fieldset>
-		
-		<br />
-		<br />
-		<br />
-		<br />
-		
-			<div>
-				<p style="font-size: 30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis tincidunt consectetur. Curabitur finibus odio eros, et bibendum leo pretium sed. Donec ut nibh condimentum, pellentesque lectus non, luctus sapien. Suspendisse sit amet velit enim. Fusce libero mauris, porta lacinia aliquam in, bibendum sit amet ante. Quisque tincidunt ante ut laoreet porttitor. Donec pharetra neque eu dignissim elementum. Suspendisse semper tortor porttitor nunc gravida, non elementum ex bibendum. Cras ac elementum purus. Vestibulum semper elementum purus vitae consequat. Donec sit amet dui rutrum, rhoncus ante ut, gravida orci. Donec interdum est sit amet orci pretium ornare vel eget tortor.</p>
-			</div>
+	
+		<fieldset>
+			<legend>Site News</legend>
+			<p>v0.0.3 (29 Januari 2022)</p>
+			</br>
+			<p>&rsaquo; three page for [Other project: Arknights - subpages] have been added, but no content yet.</p>
+			<p>&rsaquo; new navigation system for mobile user (max-width: 600px).</p>
+			<p>&rsaquo; Arknights index page got new button.</p>
+			<p>&rsaquo; new css file for mobile user.</p>
+		</fieldset>
+	<fieldset>
+			<legend>Know Issues</legend>
+			<p>&rsaquo; changing resolution from mobile resolution to desktop resolution after using navigation system may break the current page navigation, reload page to solve the issue.</p>
+	</fieldset>
 	</div>
 	
 	<!--the scripts-->

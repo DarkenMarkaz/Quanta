@@ -1,8 +1,12 @@
 /* CSS Document */
 
-.front-pic{
+.picture{
 	width: auto;
 	text-align: center;
+}
+
+.m-picture{
+	display: none;
 }
 
 .notice{
@@ -10,4 +14,14 @@
 	width: auto;
 	height: auto;
 	margin: 0px 70px 0px;
+}
+
+@media only screen and (max-width:600px){
+	.picture{
+		display: none;
+	}
+	.m-picture{
+		display: block;
+		text-align: center;
+	}
 }

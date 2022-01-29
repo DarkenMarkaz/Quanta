@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+}
+
+.void{
+	height: 0px;
+}
+
+nav{
+	position: fixed;
+	top: 0px;
+	left: 300px;
+	right: 300px;
+	height: 60px;
+	padding-left: 50px;
+	background-color: black;
+	border-radius: 0px 0px 60px 60px;
+	border-bottom: 10px solid darkred;
+}
+
+ul{
+	padding-bottom: 10px;
+}
+
+ul li{
+	float: left;
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+}
+
+ul li a{
+	display: block;
+	color: white;
+	padding: 0px 15px 0px;
+	font-size: 20px;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	background: linear-gradient(rgba(0,0,1,0.00),black);
+}
+
+ul li a:hover{
+	background-color: darkred;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+ul li ul{
+	position: absolute;
+	display: none;
+	width: 200px;
+	background-color: black;
+	border-top: 5px solid darkred;
+	border-left: 5px solid darkred;
+	border-right: 10px solid darkred;
+	border-radius: 0px 0px 15px 15px;
+}
+
+ul li ul li{
+	float: left;
+	position: relative;
+	display: block;
+	line-height: 50px;
+}
+
+ul li ul li a{
+	display: block;
+	font-size: 17px;
+	width: 170px;
+}
+
+@media only screen and (max-width: 600px){
+	nav{
+		position: fixed;
+		display: NONE;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		width: 300px;
+		height: 100%;
+		padding-left: 50px;
+		background-color: black;
+		border-radius: 0px 60px 60px 0px;
+		border-bottom: none;
+	}
+
+	ul{
+		padding-bottom: 10px;
+	}
+
+	ul li{
+		float: none;
+		position: relative;
+		display: block;
+		line-height: 60px;
+	}
+
+	ul li a{
+		display: block;
+		color: white;
+		padding: 0px 15px 0px;
+		font-size: 20px;
+		text-decoration: none;
+		transition-duration: 0.3s;
+		background: linear-gradient(rgba(0,0,1,0.00),black);
+	}
+
+	ul li a:hover{
+		background-color: darkred;
+	}
+
+	ul li:hover ul{
+		display: block;
+	}
+
+	ul li ul{
+		position: absolute;
+		display: none;
+		width: 200px;
+		background-color: black;
+		border-top: 5px solid darkred;
+		border-left: 5px solid darkred;
+		border-right: 10px solid darkred;
+		border-radius: 0px 0px 15px 15px;
+	}
+
+	ul li ul li{
+		float: left;
+		position: relative;
+		display: block;
+		line-height: 50px;
+	}
+
+	ul li ul li a{
+		display: block;
+		font-size: 17px;
+		width: 170px;
+	}
+}
+
+.button{
+	font-size: 20px;
+	display: inline-block;
+	margin: 100px;
+}
+
+.box{
+	background-color: grey;
+	border: 3px solid black;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	transition-duration: 0.5s;
+}
+
+.box2{
+	font-size: 50px;
+	border: 3px solid black;
+	width: auto;
+	height: 250px;
+	transition-duration: 0.5s;
+}
+
+.box3{
+	padding: 50px;
+	margin: 0px 300px;
+	border: 3px solid red;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -11,7 +11,7 @@
 
 p{
 	color: white;
-	width: 60%;
+	width: 100%;
 	font-size: 20px;
 }
 
@@ -19,6 +19,15 @@ body{
 	padding-bottom: 50px;
     background-image: linear-gradient(black, darkred);
     background-attachment: fixed;
+}
+
+.m-nav{
+	display: none;
+	transition-duration: 0.3s;
+}
+
+.top-nav{
+	transition-duration: 0.3s;
 }
 
 nav{
@@ -31,6 +40,7 @@ nav{
 	background-color: black;
 	border-radius: 0px 0px 60px 60px;
 	border-bottom: 10px solid darkred;
+	transition-duration: 0.3s;
 }
 
 ul{
@@ -42,6 +52,7 @@ ul li{
 	position: relative;
 	display: inline-block;
 	line-height: 60px;
+	transition-duration: 0.3s;
 }
 
 ul li a{
@@ -71,6 +82,7 @@ ul li ul{
 	border-left: 5px solid darkred;
 	border-right: 10px solid darkred;
 	border-radius: 0px 0px 15px 15px;
+	transition-duration: 0.3s;
 }
 
 ul li ul li{
@@ -78,11 +90,12 @@ ul li ul li{
 	position: relative;
 	display: block;
 	line-height: 50px;
+	transition-duration: 0.3s;
 }
 
 ul li ul li a{
 	display: block;
-	font-size: 17px;
+	font-size: 15px;
 	width: 170px;
 }
 
@@ -90,6 +103,7 @@ fieldset{
 	width: 600px;
 	padding: 50px;
 	margin: auto auto 100px;
+	border: 5px solid grey;
 	border-radius: 25px;
 }
 

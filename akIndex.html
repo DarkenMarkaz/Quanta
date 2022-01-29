@@ -7,6 +7,7 @@
 	<meta name="Keywords" content="arknights, in order, all video">
 	<title>Quanta: Arknights</title>
 	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
 	<link href="css/arknightsMainStyle.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -16,14 +17,15 @@
 	<div class="void"></div>
 	
 	<!--the top navigation-->
-	<nav>
+	<nav class="top-nav">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776</button>
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li><a href="akIndex.html">Home</a></li>
 			<li><a href="#">The PVs</a>
 				<ul>
-					<li><a href="#">Post-launch</a></li>
-					<li><a href="#">1st anniversary</a></li>
-					<li><a href="#">2nd anniversary</a></li>
+					<li><a href="arknights/akPVsPost.html">Post-launch</a></li>
+					<li><a href="arknights/akPVsPost1st.html">1st anniversary</a></li>
+					<li><a href="arknights/akPVsPost2nd.html">2nd anniversary</a></li>
 				</ul>
 			</li>
 			<li><a href="#">The Musics</a>
@@ -51,9 +53,9 @@
 	<div>
 		<fieldset>
 			<legend>The PVs</legend>
-			<a href="#"><div class="sub-nav">Post-launch PVs</div></a>
-			<a href="#"><div class="sub-nav">Post 1st year PVs</div></a>
-			<a href="#"><div class="sub-nav">Post 2nd year PVs</div></a>
+			<a href="arknights/akPVsPost.html"><div class="sub-nav">Post-launch PVs</div></a>
+			<a href="arknights/akPVsPost1st.html"><div class="sub-nav">Post 1st year PVs</div></a>
+			<a href="arknights/akPVsPost2nd.html"><div class="sub-nav">Post 2nd year PVs</div></a>
 		</fieldset>
 		
 		<fieldset>

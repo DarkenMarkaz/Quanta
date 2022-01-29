@@ -1,5 +1,13 @@
 // JavaScript Document
 
+for (var i = 1; i <= 5; i++){
+	const para = document.createElement("div");
+	para.innerHTML = i;
+	para.className = 'box2';
+
+	document.getElementById("2ndDIV").appendChild(para);
+}
+
 function vis(){
 	var thebox = document.getElementById("box");
 	var i = document.getElementById("vis").value;

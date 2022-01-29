@@ -1,0 +1,82 @@
+/* CSS Document */
+
+@media only screen and (max-width: 600px){
+	.m-nav{
+		display: block;
+		color: white;
+		top: 0px;
+		left: 0px;
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+		text-align: center;
+		background-color: black;
+		border: none;
+	}
+	nav{
+		position: fixed;
+		display: block;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		width: 300px;
+		height: auto;
+		padding: 0px;
+		background-color: black;
+		border-radius: 0px 0px 50px;
+		border-bottom: 3px solid darkred;
+	}
+
+	ul{
+		display: none;
+		padding-bottom: 10px;
+		border-top: 3px solid darkred;
+	}
+
+	ul li{
+		float: none;
+		position: static;
+		display: block;
+		line-height: 60px;
+	}
+
+	ul li a{
+		display: block;
+		color: white;
+		padding: 0px 15px 0px;
+		font-size: 20px;
+		text-decoration: none;
+		transition-duration: 0.3s;
+		background: linear-gradient(rgba(0,0,1,0.00),black);
+	}
+
+	ul li a:hover{
+		background-color: darkred;
+	}
+
+	ul li:hover ul{
+		display: block;
+	}
+
+	ul li ul{
+		position: static;
+		display: none;
+		width: auto;
+		background-color: black;
+		border-top: none;
+		border-left: 10px solid darkred;
+		border-right: none;
+		border-radius: 0px;
+	}
+
+	ul li ul li{
+		float: none;
+		position: static;
+		display: block;
+		line-height: 45px;
+	}
+
+	ul li ul li a{
+		width: 260px;
+	}
+}
