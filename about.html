@@ -1,13 +1,13 @@
-	<!doctype html>
+<!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="Welcome to Quanta">
-	<title>Quanta: Terminal</title>
+	<title>Quanta: About</title>
 	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
 	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
-	<link href="css/terminalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/aboutStyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 	<nav id="top-nav" class="top-nav">
 		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776</button>
 		<ul id="unordered-list">
-			<li><a href="#">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="#">Characters</a>
 				<ul>
 					<li><a href="#">Markaz Maxima</a></li>
@@ -39,7 +39,7 @@
 					<li><a href="#">test</a></li>
 				</ul>
 			</li>
-			<li><a href="about.html">About</a></li>
+			<li><a href="#">About</a></li>
 		</ul>
 	</nav>
 	
@@ -56,44 +56,55 @@
 		</picture>
 	</div>
 	
-	<!--the notice-->
-	<div class="notice">            
-		
+	<div>
 		<fieldset>
-			<legend>Welcome</legend>
-			<p>Heyo,</p>
-			<br/>
-			<p>This is Markaz Maxima, programmer of this terminal.</p>
+			<legend>About</legend>
+			<p>2021-2022 Quanta</p>
 			</br>
-			<p>What you see here is just an experimantal website and project, final appearent may different.</p>
-		</fieldset>
-	
-		<fieldset>
-			<legend>Site News</legend>
-			<p>v0.0.3 (29 January 2022)</p>
-			</br>
-			<p>&rsaquo; three page for [Other project: Arknights - subpages] have been added, but no content yet.</p>
-			<p>&rsaquo; new navigation system for mobile user (max-width: 600px).</p>
-			<p>&rsaquo; Arknights index page got new button.</p>
-			<p>&rsaquo; new css file for mobile user.</p>
-			</br>
-			<p>&rsaquo; read more infomation in detail at [About] page.</p>
-			</br>
-			<a href="about.html" style="color: aqua">about page</a>
-		</fieldset>
-	
-		<fieldset>
-			<legend>Know Issues</legend>
-			<p>&rsaquo; changing resolution from mobile resolution to desktop resolution after using navigation system may break the current page navigation, reload page to solve the issue.</p>
-			<p>&rsaquo; </p>
+			<p>Develop by Markaz Maxima</p>
 		</fieldset>
 	</div>
 	
-	<!--the scripts-->
+	<div class="patch-note-01">
+		<fieldset>
+			<legend>Site Update</legend>
+				<p>v0.0.4 (31 January 2022)</p>
+			</br>
+				<p>&rsaquo; patch in the problem with navigation system in [Arknights - subpages].</p>
+				<p>&rsaquo; added [About] page for detailed information.</p>
+				<p>&rsaquo; smooth out the navigation bar transition between [Desktop], [Tablet] and [Mobile] resolution.</p>
+				<p>&rsaquo; fix up various element resolution through out the site. now they look nicer for mobile and tablet user.</p>
+			</br></br>
+				<p>v0.0.3 (29 January 2022)</p>
+			</br>
+				<p>&rsaquo; three page for [Other project: Arknights - subpages] have been added, but no content yet.</p>
+				<p>&rsaquo; new navigation system for mobile user (max-width: 600px).</p>
+				<p>&rsaquo; Arknights index page got new button.</p>
+				<p>&rsaquo; new css file for mobile user.</p>
+			</br></br>
+				<p>v0.0.2 (unrecorded)</p>
+			</br>
+				<p>&rsaquo; re-design the whole color, structure, etc.</p>
+				<p>&rsaquo; added another "index" page for [Arknights]</p>
+			</br></br>
+				<p>v0.0.1 (unrecorded)</p>
+			</br>
+				<p>&rsaquo; re-purpose old website backbone.</p>
+		</fieldset>
+	</div>
+	
+	<div>
+		<fieldset>
+			<legend>Current Know Issues</legend>
+			<p>&rsaquo; changing resolution from mobile resolution to desktop resolution after using navigation system may break the current page navigation, reload page to solve the issue.</p>
+			<p>&rsaquo; mobile navigation may not working in some site, for now...</p>
+		</fieldset>
+	</div>
+	
 	<script src="js/globalJS.js"></script>
-		
+	
 </body>
-
+	
 	<footer id="footer"><br>2021-2022 Quanta<br><br>Develop by Markaz Maxima</footer>
-
+	
 </html>

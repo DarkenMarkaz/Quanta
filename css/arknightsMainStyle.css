@@ -7,6 +7,10 @@ a{
 .top-logo{
 	text-align: center;
 }
+.m-top-logo{
+	display: none;
+	text-align: center;
+}
 
 .sub-nav{
 	color: white;
@@ -26,4 +30,28 @@ a{
 	margin: 0px 10px 15px;
 	background-color: darkred;
 	background-image: linear-gradient(rgba(0,0,1,0.00),black);
+}
+
+@media only screen and (max-width: 1090px){
+	.sub-nav{
+		font-size: 23px;
+	}
+	.sub-nav:hover{
+		font-size: 21px;
+	}
+	.top-logo{
+		display: none;
+	}
+	.m-top-logo{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 720px){
+	.sub-nav{
+		font-size: 20px;
+	}
+	.sub-nav:hover{
+		font-size: 19px;
+	}
 }

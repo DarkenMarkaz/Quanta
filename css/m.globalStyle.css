@@ -1,6 +1,26 @@
 /* CSS Document */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1090px){
+	p{
+		font-size: 17px;
+	}
+	nav{
+		left: 0px;
+		right: 0px;
+	}
+}
+
+@media only screen and (max-width: 720px){
+	.void{
+		height: 75px;
+	}
+	p{
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+	body{
+		padding: 0px;
+	}
 	.m-nav{
 		display: block;
 		color: white;
@@ -78,5 +98,17 @@
 
 	ul li ul li a{
 		width: 260px;
+	}
+	fieldset{
+		width: 270px;
+		padding: 25px;
+		margin: auto auto 0px;
+		border: 5px solid grey;
+		border-radius: 25px;
+	}
+	legend{
+		color: white;
+		font-size: 20px;
+		padding: 0px;
 	}
 }
