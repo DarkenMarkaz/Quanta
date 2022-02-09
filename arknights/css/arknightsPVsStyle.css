@@ -1,0 +1,162 @@
+/* CSS Document */
+
+.video-filter{
+	width: auto;
+	height: 50px;
+	padding: 0px 50px;
+}
+
+.filter-item{
+	font-size: 20px;
+	padding: 5px 15px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	margin-right: 5px;
+	transition-duration: 0.3s;
+}
+
+.filter-item:hover{
+	background: grey;
+}
+
+.container-parent{
+	text-align: right;
+	width: 100%;
+	height: 800px;
+}
+
+.container-left{
+	position: inherit;
+	float: left;
+	width: 70%;
+	height: inherit;
+}
+
+.video-wrapper{
+	float: left;
+	height: 562.5px;
+	width: 1000px;
+	margin-left: 50px;
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+}
+
+.container-detail{
+	height: 200px;
+	width: 1000px;
+	margin-top: 600px;
+	margin-left: 50px;
+	border: 3px solid white;
+	background: grey;
+	border-radius: 25px;
+}
+
+.container-right{
+	float: right;
+	height: inherit;
+	width: 30%;
+}
+
+.playlist-all{
+	display: block;
+	position: inherit;
+	height: inherit;
+	overflow: scroll;
+	width: 90%;
+}
+
+.playlist-trailer{
+	display: none;
+	position: inherit;
+	height: inherit;
+	overflow: scroll;
+	width: 90%;
+}
+
+.playlist-pv{
+	display: none;
+	position: inherit;
+	height: inherit;
+	overflow: scroll;
+	width: 90%;
+}
+
+.playlist-anime{
+	display: none;
+	position: inherit;
+	height: inherit;
+	overflow: scroll;
+	width: 90%;
+}
+
+.playlist-rerun{
+	display: none;
+	position: inherit;
+	height: inherit;
+	overflow: scroll;
+	width: 90%;
+}
+
+.playlist-all::-webkit-scrollbar{
+	display: none;
+}
+
+.playlist-trailer::-webkit-scrollbar{
+	display: none;
+}
+
+.playlist-pv::-webkit-scrollbar{
+	display: none;
+}
+
+.playlist-anime::-webkit-scrollbar{
+	display: none;
+}
+
+.playlist-rerun::-webkit-scrollbar{
+	display: none;
+}
+
+.content-item{
+	font-size: 25px;
+	width: 90%;
+	height: 80px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+span{
+	position: relative;
+	color: white;
+	border-radius: 50%;
+	padding: 0px 10px;
+	margin-left: 5px;
+	background: darkred;
+}
+
+.content-item:hover{
+	background: grey;
+}
+
+.content-detail{
+	display: inline-block;
+	font-size: 20px;
+	padding: 0px 2px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px){
+	.container-left{
+		position: absolute;
+	}
+	.playlist{
+		position: absolute;
+		margin-top: 500px;
+	}
+}

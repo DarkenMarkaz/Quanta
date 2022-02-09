@@ -9,18 +9,28 @@
 	display: none;
 }
 
-.patch-note-01{
-	width: auto;
-	padding: 10px 0px;
-	margin: auto;
+.setting{
+	color: white;
+	text-align: center;
 }
 
-@media only screen and (max-width:1090px){
+.patch-note-01{
+	
+}
+
+@media only screen and (max-width:1140px){
 	.picture{
 		display: none;
 	}
 	.m-picture{
 		display: block;
 		text-align: center;
+	}
+}
+
+@media only screen and (max-width:720px){
+	.patch-note-01{
+		width: auto;
+		padding: 25px;
 	}
 }

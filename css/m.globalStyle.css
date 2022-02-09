@@ -1,10 +1,28 @@
 /* CSS Document */
 
-@media only screen and (max-width: 1090px){
+@media only screen and (max-width: 1460px){
+	.container-parent{
+		display: none;
+	}
+	.video-filter{
+		display: none;
+	}
+	.alert-mobile{
+		display: block;
+		width: auto;
+		height: auto;
+		text-align: center;
+		font-size: 50px;
+		padding: 50px 0px;
+		background: grey;
+	}
+}
+
+@media only screen and (max-width: 1140px){
 	p{
 		font-size: 17px;
 	}
-	nav{
+	#top-nav{
 		left: 0px;
 		right: 0px;
 	}
@@ -23,44 +41,40 @@
 	}
 	.m-nav{
 		display: block;
-		color: white;
-		top: 0px;
-		left: 0px;
-		width: 50px;
-		height: 50px;
-		font-size: 30px;
-		text-align: center;
-		background-color: black;
-		border: none;
 	}
-	nav{
-		position: fixed;
+	
+	#top-nav-mobile{
 		display: block;
+		position: fixed;
 		top: 0px;
 		left: 0px;
 		right: 0px;
-		width: 300px;
+		width: auto;
 		height: auto;
 		padding: 0px;
 		background-color: black;
-		border-radius: 0px 0px 50px;
+		border-radius: 0px 0px 25px;
 		border-bottom: 3px solid darkred;
 	}
+	
+	#top-nav{
+		display: none;
+	}
 
-	ul{
+	#top-nav-mobile ul{
 		display: none;
 		padding-bottom: 10px;
 		border-top: 3px solid darkred;
 	}
 
-	ul li{
+	#top-nav-mobile ul li{
 		float: none;
 		position: static;
 		display: block;
 		line-height: 60px;
 	}
 
-	ul li a{
+	#top-nav-mobile ul li a{
 		display: block;
 		color: white;
 		padding: 0px 15px 0px;
@@ -70,15 +84,15 @@
 		background: linear-gradient(rgba(0,0,1,0.00),black);
 	}
 
-	ul li a:hover{
+	#top-nav-mobile ul li a:hover{
 		background-color: darkred;
 	}
 
-	ul li:hover ul{
+	#top-nav-mobile ul li:hover ul{
 		display: block;
 	}
 
-	ul li ul{
+	#top-nav-mobile ul li ul{
 		position: static;
 		display: none;
 		width: auto;
@@ -89,20 +103,20 @@
 		border-radius: 0px;
 	}
 
-	ul li ul li{
+	#top-nav-mobile ul li ul li{
 		float: none;
 		position: static;
 		display: block;
 		line-height: 45px;
 	}
 
-	ul li ul li a{
+	#top-nav-mobile ul li ul li a{
 		width: 260px;
 	}
 	fieldset{
-		width: 270px;
-		padding: 25px;
-		margin: auto auto 0px;
+		width: auto;
+		padding: 20px;
+		margin: auto auto 5px;
 		border: 5px solid grey;
 		border-radius: 25px;
 	}

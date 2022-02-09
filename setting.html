@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Welcome to Quanta">
+	<title>Quanta: Setting</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/settingStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+	
+	<!--the void-->
+	<div class="void"></div>
+	
+	<!--the top navigation-->
+	<nav id="top-nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Media</a>
+				<ul>
+					<li><a href="#">Characters</a></li>
+					<li><a href="#">Locationa</a></li>
+					<li><a href="#">Story</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Projects:</a>
+				<ul>
+					<li><a href="arknightsIndex.html">Arknights</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<!--the top mobile navigation-->
+	<nav id="top-nav-mobile">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;setting</button>
+		<ul id="mobile-ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Media</a>
+				<ul>
+					<li><a href="#">Characters</a></li>
+					<li><a href="#">Locationa</a></li>
+					<li><a href="#">Story</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Projects:</a>
+				<ul>
+					<li><a href="arknightsIndex.html">Arknights</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About (terminal)</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<div>		
+		<fieldset class="dark-mode">
+			<legend class="legend">Theme</legend>
+			<label id="container" class="container">
+				<input id="checkTheme" class="checkTheme" type="checkbox" onClick="setThemeButton()">
+				<span id="slider" class="slider"></span>
+			</label>
+			<div>
+				<p id="fontColorTheme">Dark Mode</p>
+			</div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Reset Setting</legend>
+			<button type="button" id="reset" onClick="reset()">reset</button>
+		</fieldset>
+	</div>
+	
+	<script src="js/globalJS.js"></script>
+	<script src="js/settingJS.js"></script>
+	
+</body>
+</html>

@@ -5,41 +5,65 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="Welcome to Quanta">
 	<title>Quanta: About</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
 	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
 	<link href="css/aboutStyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="body">
 	
 	<!--the void-->
 	<div class="void"></div>
 	
 	<!--the top navigation-->
-	<nav id="top-nav" class="top-nav">
-		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776</button>
-		<ul id="unordered-list">
+	<nav id="top-nav">
+		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Characters</a>
+			<li><a href="#">Media</a>
 				<ul>
-					<li><a href="#">Markaz Maxima</a></li>
-					<li><a href="#">Diana Alexander</a></li>
-					<li><a href="#">Godric Ericson</a></li>
-					<li><a href="#">Red Lotus</a></li>
+					<li><a href="#">Characters</a></li>
+					<li><a href="#">Locationa</a></li>
+					<li><a href="#">Story</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Chapters</a>
+			<li><a href="#">Projects:</a>
 				<ul>
-					<li><a href="#">nothing yet...</a></li>
+					<li><a href="arknightsIndex.html">Arknights</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Misc. Projects</a>
+			<li><a href="#">Other</a>
 				<ul>
-					<li><a href="akIndex.html">Arknights</a></li>
-					<li><a href="#">test</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="setting.html">Setting</a></li>
 				</ul>
 			</li>
-			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+	
+	<!--the top mobile navigation-->
+	<nav id="top-nav-mobile">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;about</button>
+		<ul id="mobile-ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Media</a>
+				<ul>
+					<li><a href="#">Characters</a></li>
+					<li><a href="#">Locationa</a></li>
+					<li><a href="#">Story</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Projects:</a>
+				<ul>
+					<li><a href="arknightsIndex.html">Arknights</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About (terminal)</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 	
@@ -63,11 +87,17 @@
 			</br>
 			<p>Develop by Markaz Maxima</p>
 		</fieldset>
-	</div>
-	
-	<div class="patch-note-01">
-		<fieldset>
+
+		<fieldset class="patch-note-01">
 			<legend>Site Update</legend>
+				<p>v0.0.5 (9 February 2022)</p>
+			</br>
+				<p>&rsaquo; added new [Dark Mode] setting. the dark mode is on by default and can be toggle in [Setting] page.</p>
+				<p>&rsaquo; patch in the problem with navigation transition. now when user transitioning from wide to small width and/or vice versa, the navigation bar won't bug out.</p>
+				<p>&rsaquo; added content in [Arknights - subpages ( arknightsPVsPost ). however, for mobile user it impossible and annoying to navigate for the time.</p>
+				<p>&rsaquo; change a little bit of navigation items.</p>
+				<p>&rsaquo; more content for [Arknights - subpages] after this.</p>
+			</br></br>
 				<p>v0.0.4 (31 January 2022)</p>
 			</br>
 				<p>&rsaquo; patch in the problem with navigation system in [Arknights - subpages].</p>
@@ -91,12 +121,10 @@
 			</br>
 				<p>&rsaquo; re-purpose old website backbone.</p>
 		</fieldset>
-	</div>
-	
-	<div>
+
 		<fieldset>
 			<legend>Current Know Issues</legend>
-			<p>&rsaquo; nothing as of now...</p>
+			<p>&rsaquo; it quite here...</p>
 		</fieldset>
 	</div>
 	

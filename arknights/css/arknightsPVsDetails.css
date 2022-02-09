@@ -1,0 +1,28 @@
+/* CSS Document */
+
+#filt01:disabled{
+	color: white;
+}
+
+#filt02:disabled{
+	color: white;
+}
+
+#filt03:disabled{
+	color: white;
+}
+
+#filt04:disabled{
+	color: white;
+}
+
+.video-title{
+	position: inherit;
+	text-align: left;
+	width: 970px;
+	height: 30px;
+	font-size: 30px;
+	margin: 10px;
+	padding-left: 10px;
+}
+

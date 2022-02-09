@@ -6,31 +6,75 @@
 }
 
 .void{
-	height: 150px;
+	height: 100px;
+}
+
+.alert-mobile{
+	display: none;
 }
 
 p{
 	color: white;
 	width: 100%;
 	font-size: 20px;
+	padding-bottom: 5px;
 }
 
-body{
-	padding-bottom: 50px;
-    background-image: linear-gradient(black, darkred);
-    background-attachment: fixed;
+.dark{
+	background: #270000;
+}
+
+.light{
+	background: white;
+}
+
+.dark p{
+	color: white;
+}
+
+.dark legend{
+	color: white;
+}
+
+.light p{
+	color: black;
+}
+
+.light legend{
+	color: black;
 }
 
 .m-nav{
 	display: none;
+	color: white;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	margin-left: 10px;
+	text-align: center;
+	text-overflow: clip;
+	background-color: black;
+	border: none;
 	transition-duration: 0.3s;
 }
 
-.top-nav{
-	transition-duration: 0.3s;
+#top-nav-mobile{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	padding: 0px;
+	background-color: black;
+	border-radius: 0px 0px 50px;
+	border-bottom: 3px solid darkred;
 }
 
-nav{
+#top-nav{
 	position: fixed;
 	top: 0px;
 	left: 200px;
@@ -43,11 +87,13 @@ nav{
 	transition-duration: 0.3s;
 }
 
-ul{
+#top-nav ul{
+	display: block;
 	padding-bottom: 10px;
+	border-top: none;
 }
 
-ul li{
+#top-nav ul li{
 	float: left;
 	position: relative;
 	display: inline-block;
@@ -55,7 +101,7 @@ ul li{
 	transition-duration: 0.3s;
 }
 
-ul li a{
+#top-nav ul li a{
 	display: block;
 	color: white;
 	padding: 0px 15px 0px;
@@ -65,15 +111,15 @@ ul li a{
 	background: linear-gradient(rgba(0,0,1,0.00),black);
 }
 
-ul li a:hover{
+#top-nav ul li a:hover{
 	background-color: darkred;
 }
 
-ul li:hover ul{
+#top-nav ul li:hover ul{
 	display: block;
 }
 
-ul li ul{
+#top-nav ul li ul{
 	position: absolute;
 	display: none;
 	width: 200px;
@@ -85,24 +131,27 @@ ul li ul{
 	transition-duration: 0.3s;
 }
 
-ul li ul li{
+#top-nav ul li ul li{
 	float: left;
 	position: relative;
 	display: block;
 	line-height: 50px;
+	border: none;
 	transition-duration: 0.3s;
 }
 
-ul li ul li a{
+#top-nav ul li ul li a{
 	display: block;
 	font-size: 15px;
 	width: 170px;
 }
 
 fieldset{
+	text-align: left;
 	width: 600px;
+	min-width: 200px;
 	padding: 50px;
-	margin: auto auto 100px;
+	margin: auto auto 25px;
 	border: 5px solid grey;
 	border-radius: 25px;
 }
@@ -134,7 +183,7 @@ footer{
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background-image: linear-gradient(black, darkred);
+	background: #270000;
 }
 
 /* Handle */

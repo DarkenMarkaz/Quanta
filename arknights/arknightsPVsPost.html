@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to Quanta">
+	<meta name="Keywords" content="arknights, in order, all video">
+	<title>Arknights: post-launch pvs - Quanta</title>
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<link href="../css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="../css/m.globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/arknightsPVsStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/arknightsPVsDetails.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+	
+	<!--teh void-->
+	<div class="void"></div>
+	
+	<!--the top navigation-->
+	<nav id="top-nav">
+		<ul>
+			<li><a href="arknightsIndex.html">Home</a></li>
+			<li><a href="#">The PVs</a>
+				<ul>
+					<li><a href="arknightsPVsPost.html">Post-launch</a></li>
+					<li><a href="arknightsPVsPost1st.html">1st anniversary</a></li>
+					<li><a href="arknightsPVsPost2nd.html">2nd anniversary</a></li>
+				</ul>
+			</li>
+			<li><a href="#">The Musics (EPs)</a>
+				<ul>
+					<li><a href="#">Operators EPs</a></li>
+					<li><a href="#">Enemies Themes</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta:</a>
+				<ul>
+					<li><a href="index.html">Main Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About (terminal)</a></li>
+					<li><a href="arknights/setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<!--the top mobile navigation-->
+	<nav id="top-nav-mobile">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;Arknights</button>
+		<ul id="mobile-ul">
+			<li><a href="../arknightsIndex.html">Home</a></li>
+			<li><a href="#">The PVs</a>
+				<ul>
+					<li><a href="arknightsPVsPost.html">Post-launch</a></li>
+					<li><a href="#">1st anniversary</a></li>
+					<li><a href="#">2nd anniversary</a></li>
+				</ul>
+			</li>
+			<li><a href="#">The Musics (EPs)</a>
+				<ul>
+					<li><a href="#">Operators Theme</a></li>
+					<li><a href="#">Enemies Themes</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta:</a>
+				<ul>
+					<li><a href="../index.html">Main Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="../about.html">About (terminal)</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<!--the filter bar-->
+	<div id="video-filter" class="video-filter">
+		<button type="button" id="filt01" class="filter-item" onClick="filt01()" disabled>All</button>
+		<button type="button" id="filt02" class="filter-item" onClick="filt02()">Trailers</button>
+		<button type="button" id="filt03" class="filter-item" onClick="filt03()">PVs</button>
+		<button type="button" id="filt04" class="filter-item" onClick="filt04()">Animation</button>
+		<button type="button" id="filt05" class="filter-item" onClick="filt05()">Re-run</button>
+	</div>
+	
+	<!--the main content-->
+	<div class="container-parent">
+		
+		<!--the main video-->
+		<div class="container-left">
+			<div class="video-wrapper">
+				<iframe id="primary-video" allowfullscreen></iframe>
+			</div>
+			<div class="container-detail">
+				<div id="video-title" class="video-title">video title here [tap any video or filter it]</div>
+			</div>
+		</div>
+		
+		<div class="container-right">
+			<!--contain all video-->
+			<div id="playlist-all" class="playlist-all">
+				
+				<button type="button" id="cont01" class="content-item" onClick="all01()">Concept Trailer 1<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+					</div>
+				</button>
+				<button type="button" id="cont02" class="content-item" onClick="all02()">Concept Trailer 2<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+					</div>
+				</button>
+				<button type="button" id="cont03" class="content-item" onClick="all03()">Animation Trailer<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont04" class="content-item" onClick="all04()">Episode 5: Necessary Solution
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont05" class="content-item" onClick="all05()">Grani and the Knight's Treasure
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->
+				<button type="button" id="cont06" class="content-item" onClick="all06()">Operatinal Intellingent
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont07" class="content-item" onClick="all07()">Heart of Surging Flame
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont08" class="content-item" onClick="all08()">Code of Brawl
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont09" class="content-item" onClick="all09()">Contingency Contract
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont10" class="content-item" onClick="all10()">Episode 6: Partial Necrosis
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->
+				<button type="button" id="cont11" class="content-item" onClick="all11()">Ancient Forge
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont12" class="content-item" onClick="all12()">Stories of Afternoon
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont13" class="content-item" onClick="all13()">CC #0: Operation Barrenland
+					<div>
+						<div class="content-detail">PV</div>
+					</div>
+				</button>
+				<button type="button" id="cont14" class="content-item" onClick="all14()">Children of Ursus
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont15" class="content-item" onClick="all15()">Twilight of Wolumonde
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->	
+				<button type="button" id="cont16" class="content-item" onClick="all16()">CC #1: Operation Pyrite
+					<div>
+						<div class="content-detail">PV</div>
+					</div>
+				</button>
+				<button type="button" id="cont17" class="content-item" onClick="all17()">Darknights Memoir
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>	
+				</button>
+			</div>
+			<!--end of contain all video-->
+			
+			<!--contain trailer video-->
+			<div id="playlist-trailer" class="playlist-trailer">
+				
+				<button type="button" id="cont01" class="content-item" onClick="all01()">Concept Trailer 1<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+					</div>
+				</button>
+				<button type="button" id="cont02" class="content-item" onClick="all02()">Concept Trailer 2<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+					</div>
+				</button>
+				<button type="button" id="cont03" class="content-item" onClick="all03()">Animation Trailer<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+			</div>
+			<!--end of contain trailer video-->
+			
+			<!--contain pv video-->
+			<div id="playlist-pv" class="playlist-pv">
+				
+				<button type="button" id="cont04" class="content-item" onClick="all04()">Episode 5: Necessary Solution
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont05" class="content-item" onClick="all05()">Grani and the Knight's Treasure
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont06" class="content-item" onClick="all06()">Operatinal Intellingent
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont07" class="content-item" onClick="all07()">Heart of Surging Flame
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont08" class="content-item" onClick="all08()">Code of Brawl
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->
+				<button type="button" id="cont09" class="content-item" onClick="all09()">Contingency Contract
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont10" class="content-item" onClick="all10()">Episode 6: Partial Necrosis
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont11" class="content-item" onClick="all11()">Ancient Forge
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont12" class="content-item" onClick="all12()">Stories of Afternoon
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont13" class="content-item" onClick="all13()">CC #0: Operation Barrenland
+					<div>
+						<div class="content-detail">PV</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->
+				<button type="button" id="cont14" class="content-item" onClick="all14()">Children of Ursus
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont15" class="content-item" onClick="all15()">Twilight of Wolumonde
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont16" class="content-item" onClick="all16()">CC #1: Operation Pyrite
+					<div>
+						<div class="content-detail">PV</div>
+					</div>
+				</button>
+				<button type="button" id="cont17" class="content-item" onClick="all17()">Darknights Memoir
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>	
+				</button>
+			</div>
+			<!--end of contain pv video-->
+			
+			<!--content anime video-->
+			<div id="playlist-anime" class="playlist-anime">
+				
+				<button type="button" id="cont03" class="content-item" onClick="all03()">Animation Trailer<span>!</span>
+					<div>
+						<div class="content-detail">Trailer</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont04" class="content-item" onClick="anime04()">Episode 5: Necessary Solution
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont05" class="content-item" onClick="anime05()">Grani and the Knight's Treasure
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont06" class="content-item" onClick="anime06()">Operatinal Intellingent
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont07" class="content-item" onClick="anime07()">Heart of Surging Flame
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->
+				<button type="button" id="cont08" class="content-item" onClick="anime08()">Code of Brawl
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont09" class="content-item" onClick="all09()">Contingency Contract
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont10" class="content-item" onClick="anime10()">Episode 6: Partial Necrosis
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont11" class="content-item" onClick="anime11()">Ancient Forge
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont12" class="content-item" onClick="anime12()">Stories of Afternoon
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<!--===========================================================================================================================================================================-->
+				<button type="button" id="cont14" class="content-item" onClick="anime14()">Children of Ursus
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont15" class="content-item" onClick="anime15()">Twilight of Wolumonde
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont17" class="content-item" onClick="anime17()">Darknights Memoir
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>	
+				</button>
+			</div>
+			<!--end of contain all video-->
+			
+			<!--content rerun video-->
+			<div id="playlist-rerun" class="playlist-rerun">
+				
+				<button type="button" id="cont03" class="content-item" onClick="rerun01()">Grani and the Knight's Treasure
+					<div>
+						<div class="content-detail">Trailer</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont04" class="content-item" onClick="rerun02()">Heart of Surging Flame
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont05" class="content-item" onClick="rerun03()">Code of Brawl
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont06" class="content-item" onClick="rerun04()">Twilight of Wolumonde
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+				<button type="button" id="cont07" class="content-item" onClick="rerun05()">Darknights Memoir
+					<div>
+						<div class="content-detail">PV</div>
+						<div class="content-detail">Anime</div>
+					</div>
+				</button>
+			</div>
+			<!--end of contain rerun video-->
+		</div>
+	</div>
+	<!--the end of main content-->
+	
+	<div class="alert-mobile">you need screen of 1461+ wide in width to display the page for now, sorry...</div>
+	
+	<script src="../js/globalJS.js"></script>
+	<script src="js/arknightsPVsJS.js"></script>
+	
+</body>
+
+<footer id="footer"><br>2021-2022 Quanta<br><br></footer>
+	
+</html>
