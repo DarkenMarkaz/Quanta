@@ -1,40 +1,8 @@
 /* CSS Document */
 
-@media only screen and (max-width: 1460px){
-	.container-parent{
-		display: none;
-	}
-	.video-filter{
-		display: none;
-	}
-	.alert-mobile{
-		display: block;
-		width: auto;
-		height: auto;
-		text-align: center;
-		font-size: 50px;
-		padding: 50px 0px;
-		background: grey;
-	}
-}
-
-@media only screen and (max-width: 1140px){
-	p{
-		font-size: 17px;
-	}
-	#top-nav{
-		left: 0px;
-		right: 0px;
-	}
-}
-
-@media only screen and (max-width: 720px){
+@media (max-width: 920px){
 	.void{
 		height: 75px;
-	}
-	p{
-		font-size: 15px;
-		margin-bottom: 5px;
 	}
 	body{
 		padding: 0px;
@@ -90,6 +58,7 @@
 
 	#top-nav-mobile ul li:hover ul{
 		display: block;
+		transition-delay: 1s;
 	}
 
 	#top-nav-mobile ul li ul{

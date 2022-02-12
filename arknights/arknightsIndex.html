@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to appreciate my commitment to playing Arknights, my first Tower Defence">
+	<meta name="description" content="Welcome to Quanta">
 	<meta name="Keywords" content="arknights, in order, all video">
-	<title>Arknights: post-launch pvs - Quanta</title>
-	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<title>Quanta: Arknights</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link href="../css/globalStyle.css" rel="stylesheet" type="text/css">
 	<link href="../css/m.globalStyle.css" rel="stylesheet" type="text/css">
-	<link href="css/arknightsPVsStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/arknightsStyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="body">
@@ -48,11 +48,10 @@
 			</li>
 		</ul>
 	</nav>
-	<!--the end of top navigation-->
 	
 	<!--the top mobile navigation-->
 	<nav id="top-nav-mobile">
-		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;Arknights</button>
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;Arknights&nbsp;Terminal</button>
 		<ul id="mobile-ul">
 			<li><a href="arknightsIndex.html">Home</a></li>
 			<li><a href="#">Videos (PVs)</a>
@@ -81,52 +80,45 @@
 			</li>
 		</ul>
 	</nav>
-	<!--the end of top mobile navigation-->
 	
-	<!--the filter bar-->
-	<div class="top-filter-bar">
-		<div id="videos_part_01" class="video-filter">
-			<button type="button" id="filt01" class="filter-item" onClick="filt01()" disabled>All</button>
-			<button type="button" id="filt02" class="filter-item" onClick="filt02()">Trailers</button>
-			<button type="button" id="filt03" class="filter-item" onClick="filt03()">PVs</button>
-			<button type="button" id="filt04" class="filter-item" onClick="filt04()">Anime</button>
-			<button type="button" id="filt05" class="filter-item" onClick="filt05()">3D animation</button>
-			<button type="button" id="filt06" class="filter-item" onClick="filt06()">Re-run</button>
-		</div>
-		<div class="annual-pv-filter">
-			<button type="button" id="pre-part" class="part-filter-item" onClick="prePart()" disabled>&lsaquo;</button>
-			<div class="name-filter-item">1st year videos</div>
-			<button type="button" id="nxt-part" class="part-filter-item" onClick="nxtPart()" disabled>&rsaquo;</button>
-		</div>
+	<div class="top-logo">
+		<picture>
+			<img src="img/arknightsLogo.png" style="height: 200px">
+		</picture>
 	</div>
-	<!--the end of filter bar-->
-	
-	<!--the main content-->
-	<div class="container-parent">
-		
-		<!--the main video-->
-		<div class="container-left">
-			<div class="video-wrapper">
-				<iframe id="primary-video" allow="autoplay" allowfullscreen></iframe>
-			</div>
-			<div class="container-detail">
-				<div id="video-title" class="video-title">video title here [tap any video or filter it]</div>
-			</div>
-		</div>
-		
-		<div class="container-right">
-			<iframe id="switchable-playlist" src="postPVs-playlist/postPVs01-playlist/postAll.html" height="800" width="400"></iframe>
-		</div>
+	<div class="m-top-logo">
+		<picture>
+			<img src="img/arknightsLogo.png" style="height: 100px">
+		</picture>
 	</div>
-	<!--the end of main content-->
 	
-	<div class="alert-mobile">you need screen of 350px wide and higher in width to display the page.</div>
-	
+	<!--the sub navigation-->
+	<div>
+		<fieldset>
+			<legend>Site News</legend>
+			<p>for latest news of this site, visit:</p>
+			</br>
+			<a href="../about.html" style="color: white; background: black; padding: 2px; text-decoration: none">about page</a>
+		</fieldset>
+		
+		<fieldset>
+			<legend>The PVs</legend>
+			<a href="arknightsPVsPost.html" onClick="setAkVideoPartList01()"><div class="sub-nav">Post-launch PVs</div></a>
+			<a href="arknightsPVsPost.html" onClick=""><div class="sub-nav">Post 1st year PVs (not yet...)</div></a>
+			<a href="arknightsPVsPost.html" onClick=""><div class="sub-nav">Post 2nd year PVs (not yet...)</div></a>
+		</fieldset>
+		
+		<fieldset>
+			<legend>The Musics</legend>
+			<a href="#"><div class="sub-nav">Operators Themes (not yet...)</div></a>
+			<a href="#"><div class="sub-nav">Enemies Themes (not yet...)</div></a>
+		</fieldset>
+	</div>
+		
 	<script src="../js/globalJS.js"></script>
-	<script src="js/arknightsPVsJS.js"></script>
 	
 </body>
 
 <footer id="footer"><br>2021-2022 Quanta<br><br></footer>
-	
+
 </html>
