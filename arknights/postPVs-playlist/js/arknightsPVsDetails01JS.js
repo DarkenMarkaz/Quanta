@@ -135,29 +135,28 @@ function anime_13(){
 
 function rerun_01(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/a2le7ggYbqU?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "Rerun Event: Grani and the Knight's Treasure";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Grani and the Knight's Treasure";
 }
-
 function rerun_02(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/8mN02rDxE70?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "Rerun Event: Heart of Surging Flame";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Heart of Surging Flame";
 }
-
 function rerun_03(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/GsoTKQYiA0w?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "Rerun Event: Code of Brawl";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Code of Brawl";
 }
-
 function rerun_04(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/-L6eGVUh0UE?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "Rerun Event: Twilight of Wolumonde";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Twilight of Wolumonde";
 }
-
 function rerun_05(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/-3VssHHpbt8?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "Rerun Event: Darknights Memoir";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Darknights Memoir";
 }
-
+function rerun_06(){
+	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/Oj_Sf4BZmok?autoplay=1";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Darknights Memoir";
+}
 
 
 

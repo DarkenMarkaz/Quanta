@@ -1,7 +1,6 @@
 // JavaScript Document
 
 setGlobalTheme();
-checkArknightsPVsPlaylist();
 
 function setGlobalTheme(){
 	var thm = localStorage.getItem("siteTheme");
@@ -13,23 +12,6 @@ function setGlobalTheme(){
 	} else {
 		localStorage.setItem("siteTheme", "dark");
 		location.reload();
-	}
-}
-
-function checkArknightsPVsPlaylist(){
-	var akplayl = localStorage.getItem("akVideoPartList");
-	
-	if(akplayl == "1"){
-		document.getElementById("switchable-playlist").src = "postPVs-playlist/postPVs01-playlist/postAll.html";
-		document.getElementById("filt05").disabled = true;
-	} else if(akplayl == "2"){
-		document.getElementById("switchable-playlist").src = "postPVs-playlist/postPVs02-playlist/postAll.html";
-		document.getElementById("filt05").disabled = true;
-	} else if(akplayl == "3"){
-		document.getElementById("switchable-playlist").src = "postPVs-playlist/postPVs03-playlist/postAll.html";
-		document.getElementById("filt05").disabled = true;
-	} else {
-		localStorage.setItem("akVideoPartList", "1");
 	}
 }
 

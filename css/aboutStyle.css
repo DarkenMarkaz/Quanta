@@ -16,9 +16,15 @@
 
 .patch-note-01{
 	display: block;
+	height: 500px;
+	overflow: scroll;
 }
 
-@media only screen and (max-width:1140px){
+.patch-note-01::-webkit-scrollbar{
+	display: none;
+}
+
+@media (max-width:1140px){
 	.picture{
 		display: none;
 	}
@@ -28,9 +34,11 @@
 	}
 }
 
-@media only screen and (max-width:720px){
+@media (max-width:720px){
 	.patch-note-01{
 		width: auto;
 		padding: 25px;
 	}
 }
+
+

@@ -25,8 +25,8 @@
 			<li><a href="#">Videos (PVs)</a>
 				<ul>
 					<li><a href="arknightsPVsPost.html" onClick="setAkVideoPartList01()">Post-launch</a></li>
-					<li><a href="arknightsPVsPost.html" onClick="">1st anniversary (not yet...)</a></li>
-					<li><a href="arknightsPVsPost.html" onClick="">2nd anniversary (not yet...)</a></li>
+					<li><a href="arknightsPVsPost.html" onClick="setAkVideoPartList02()">1st anniversary (not yet...)</a></li>
+					<li><a href="arknightsPVsPost.html" onClick="setAkVideoPartList03()">2nd anniversary (not yet...)</a></li>
 				</ul>
 			</li>
 			<li><a href="#">Musics (EPs)</a>
@@ -42,7 +42,7 @@
 			</li>
 			<li><a href="#">Other</a>
 				<ul>
-					<li><a href="../about.html">About (terminal)</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="setting.html">Setting</a></li>
 				</ul>
 			</li>
@@ -57,9 +57,9 @@
 			<li><a href="arknightsIndex.html">Home</a></li>
 			<li><a href="#">Videos (PVs)</a>
 				<ul>
-					<li><a href="arknightsPVsPost.html">Post-launch</a></li>
-					<li><a href="#">1st anniversary</a></li>
-					<li><a href="#">2nd anniversary</a></li>
+					<li><a href="arknightsPVsPost.html" onClick="setAkVideoPartList01()">Post-launch</a></li>
+					<li><a href="arknightsPVsPost.html" onClick="setAkVideoPartList02()">1st anniversary</a></li>
+					<li><a href="arknightsPVsPost.html" onClick="setAkVideoPartList03()">2nd anniversary</a></li>
 				</ul>
 			</li>
 			<li><a href="#">Musics (EPs)</a>
@@ -75,7 +75,7 @@
 			</li>
 			<li><a href="#">Other</a>
 				<ul>
-					<li><a href="../about.html">About (terminal)</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="setting.html">Setting</a></li>
 				</ul>
 			</li>
@@ -95,7 +95,7 @@
 		</div>
 		<div class="annual-pv-filter">
 			<button type="button" id="pre-part" class="part-filter-item" onClick="prePart()" disabled>&lsaquo;</button>
-			<div class="name-filter-item">1st year videos</div>
+			<div id="name-filter-item" class="name-filter-item"></div>
 			<button type="button" id="nxt-part" class="part-filter-item" onClick="nxtPart()" disabled>&rsaquo;</button>
 		</div>
 	</div>
